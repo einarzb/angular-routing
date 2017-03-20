@@ -20,3 +20,8 @@ To make 'home' default - we re-route the user to the URL that activates our home
 
 by this line: $urlRouterProvider.otherwise('/home');
 we re-route the user to the URL that activates our home state if it otherwise can't find a matching route.
+
+nested states - We're using "dot notation" to specify that x state will be a sub-state of home. A nested state does not replace a parent state,
+
+
+
