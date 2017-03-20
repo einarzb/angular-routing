@@ -10,3 +10,12 @@ it's name represent what the user sees when they open our application.
 by routing via state instead of the url, we can build more robust and functional applications. 
 we can assign a specific URL to each state but it's not necessary. 
 
+The directive ui-sref is telling ui-router to change the active state to "home" when the element is clicked.
+
+the url gets #! ("hash-bang") and it's Angular's way of making sure the route is handled by it and not the server!
+
+We need a way to redirect the URL to a specific route whenever there is not a matching state!
+
+To make 'home' default - we re-route the user to the URL that activates our home state if it otherwise can't find a matching route.
+
+by this line: $urlRouterProvider.otherwise('/home');
