@@ -10,7 +10,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     url: '/home',
     templateUrl: 'partial-home.html'
     //vanilla way: template:'<h1>hello world!</h1>'
-  })
+  }) //nested state
     .state('home.list', {
     url:'/list',
     templateUrl: 'partial-home-list.html'
