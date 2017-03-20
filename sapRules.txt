@@ -1,0 +1,12 @@
+
+configure services before they're actually created
+every service has a provider ($http or $state)
+this func runs first! 
+
+the providers come with the ui.router lib
+
+state - by changing state on an app we can change the view. it points to a place in the app (ui wise)
+it's name represent what the user sees when they open our application. 
+by routing via state instead of the url, we can build more robust and functional applications. 
+we can assign a specific URL to each state but it's not necessary. 
+
