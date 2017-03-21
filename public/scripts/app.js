@@ -2,7 +2,7 @@ var app = angular.module('scotcha', ['ui.router']);
 //injecting ui.router
 
 app.config(function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/home'); //re-route the user to the URL that activates our home state if it otherwise can't find a matching route.
+  $urlRouterProvider.otherwise('/home/review'); //re-route the user to the URL that activates our home state if it otherwise can't find a matching route.
 
 //homepage
   $stateProvider
@@ -18,10 +18,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('home.review', {
     url:'/review',
     templateUrl:'partial-home-review.html' 
-  })
-    .state('home.gallery', {
-    url:'/gallery',
-    templateUrl:'partial-home-gallery.html'  
   })
 
  $stateProvider.state('contact', {
