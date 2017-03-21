@@ -14,6 +14,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('home.list', {
     url:'/list',
     templateUrl: 'partial-home-list.html'
+  }) //nested reviews
+    .state('home.review', {
+    url:'/review',
+    templateUrl:'partial-home-review.html' 
+  })
+    .state('home.gallery', {
+    url:'/gallery',
+    templateUrl:'partial-home-gallery.html'  
   })
 
  $stateProvider.state('contact', {
