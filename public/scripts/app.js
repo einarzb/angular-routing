@@ -2,8 +2,8 @@ var app = angular.module('igg', ['ui.router']); //injecting ui.router
 
 /*We can configure a service using its provider.
 Every service has a provider ($httpProvider) and state service ($stateProvider)*/
-app.config(function($stateProvider, $urlRouterProvider) {
-  
+app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+
 //re-route the user to the URL that activates our home state if it otherwise can't find a matching route.
   $urlRouterProvider.otherwise('/home');
 
@@ -22,10 +22,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
     url:'/review',
     templateUrl:'../templates/partial-home-review.html'
   })
-
- $stateProvider.state('contact', {
+    .state('contact', {
   url: '/contact',
   templateUrl: '../templates/partial-contact.html'
-  });
+  })
+    .state('about', {
+   url: '/about',
+   templateUrl: '../templates/partial-about.html'
+   })
 
+   // use the HTML5 History API - Removing the #!
+   $locationProvider.html5Mode(true);
 });
