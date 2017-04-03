@@ -11,8 +11,9 @@ li{color:#fff;}*/
     /* Margin bottom by footer height */
     margin-bottom: 60px;
   }
+
   .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
@@ -25,5 +26,3 @@ li{color:#fff;}*/
   .footer a {
     color: #fff;
   }
-
-  
