@@ -1,4 +1,4 @@
-var app = angular.module('scotcha', ['ui.router']);
+var app = angular.module('igg', ['ui.router']);
 //injecting ui.router
 
 app.config(function($stateProvider, $urlRouterProvider) {
@@ -17,7 +17,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   }) //nested reviews
     .state('home.review', {
     url:'/review',
-    templateUrl:'partial-home-review.html' 
+    templateUrl:'partial-home-review.html'
   })
 
  $stateProvider.state('contact', {
