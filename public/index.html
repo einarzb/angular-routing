@@ -8,25 +8,55 @@
 </head>
 
 <body ng-app="igg">
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" ui-sref="home">Go Green Electric</a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-        <ul class="nav navbar-nav">
-            <li><a ui-sref="contact">Contact Us</a></li>
-        </ul>
     </nav>
 
-    <div class="container">
-        <!-- here is where magic happens -->
-        <div ui-view></div>
-    </div>
+    <header>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div ui-view></div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
-    <footer class="container-fluid bg-4 text-center">
+    <footer class="footer text-center">
         <p>
             <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-            <a href="tel:+18185187775" style="text-decoration: none">1-818-518-7775</a>
+            <a href="tel:+18185187775">1-818-518-7775</a>
             <span class="glyphicon glyphicon-mail" aria-hidden="true"></span>
             <a href="mailto:iggelectric@gmail.com" style="text-decoration: none">iggelectric@gmail.com</a>
         </p>

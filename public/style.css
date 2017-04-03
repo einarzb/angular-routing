@@ -11,9 +11,28 @@ li{color:#fff;}*/
       margin: auto;
   }
 
-  .bg-4{
-    height:70px;
-    background-color: #000;
+  /* Sticky footer styles
+  -------------------------------------------------- */
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
     color: #fff;
     padding-top: 20px;
+    background-color: #4bb745;
+  }
+
+  .footer a {
+    color: #fff;
+
   }
