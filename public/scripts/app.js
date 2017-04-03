@@ -1,12 +1,15 @@
 var app = angular.module('igg', ['ui.router']); //injecting ui.router
 
+/*We can configure a service using its provider.
+Every service has a provider ($httpProvider) and state service ($stateProvider)*/
 app.config(function($stateProvider, $urlRouterProvider) {
-  //re-route the user to the URL that activates our home state if it otherwise can't find a matching route.
+  
+//re-route the user to the URL that activates our home state if it otherwise can't find a matching route.
   $urlRouterProvider.otherwise('/home');
 
 //homepage
   $stateProvider
-    .state('home', {
+    .state('home', { //method that gets argumnet (name, Options Object{url, templateUrl})
     url: '/home',
     templateUrl: '../templates/partial-home.html'
     //vanilla way: template:'<h1>hello world!</h1>'
