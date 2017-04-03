@@ -14,7 +14,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     templateUrl: '../templates/partial-home.html'
     //vanilla way: template:'<h1>hello world!</h1>'
   }) //nested state
-    .state('home.list', {
+    .state('home.list', { //sub state of home state
     url:'/list',
     templateUrl: '../templates/partial-home-list.html'
   }) //nested reviews
