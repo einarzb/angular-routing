@@ -5,18 +5,8 @@
 
 li{color:#fff;}*/
 
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
-
   /* Sticky footer styles
   -------------------------------------------------- */
-  html {
-    position: relative;
-    min-height: 100%;
-  }
   body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
